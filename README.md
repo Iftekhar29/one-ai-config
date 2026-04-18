@@ -2,8 +2,8 @@
 
 > Write AI instructions once. Use them everywhere.
 
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/ai-files-for-every-ide)
-![GitHub stars](https://img.shields.io/github/stars/your-username/ai-files-for-every-ide?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/iftekhar29/one-ai-config)
+![GitHub stars](https://img.shields.io/github/stars/iftekhar29/one-ai-config?style=social)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
@@ -62,7 +62,7 @@ All of them → **delegate to AGENTS.md**
 - docs/architecture.md  
 - docs/prd.md  
 - docs/api.md  
-- docs/database.md  
+- docs/conventions.md  
 
 ### 3. Safety (Boundaries)
 - .aiignore  
@@ -82,7 +82,7 @@ All of them → **delegate to AGENTS.md**
 ## ⚡ Quick Start
 
 ```bash
-git clone https://github.com/your-username/ai-files-for-every-ide
+git clone https://github.com/iftekhar29/one-ai-config
 ```
 
 1. Copy files into your project  
