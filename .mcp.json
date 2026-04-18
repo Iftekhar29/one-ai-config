@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "github": {
+      "type": "url",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "note": "Read issues, PRs, create draft PRs. Requires GITHUB_TOKEN env var."
+    },
+    "postgres": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres", "${DATABASE_URL}"],
+      "note": "Read-only SELECT queries. Never use for mutations in production."
+    },
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "./src",
+        "./docs",
+        "./tests"
+      ],
+      "note": "Scoped to src/, docs/, tests/ only. Do not expand scope without team review."
+    }
+  },
+  "_comment": [
+    "Remove any server your project does not use.",
+    "Add project-specific servers below this comment.",
+    "Never store API keys here — use environment variables.",
+    "Document each tool's allowed actions in AGENTS.md under 'MCP tools'."
+  ]
+}

@@ -1,0 +1,63 @@
+# .aiignore — Files and paths AI must never read, modify, or reference
+# Syntax mirrors .gitignore
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Legacy — read-only historical code, do not touch
+legacy/
+_archive/
+_deprecated/
+
+# Generated output — never edit generated files directly
+dist/
+build/
+out/
+.next/
+__pycache__/
+*.pyc
+*.min.js
+*.min.css
+
+# Dependencies — never modify
+node_modules/
+vendor/
+.venv/
+venv/
+
+# Database migrations — append-only, never delete or edit existing
+# (new migrations are fine to create, existing ones are frozen)
+# migrations/   ← commented out: AI can read schema but not edit old migrations
+
+# Lock files — never edit manually
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+poetry.lock
+Pipfile.lock
+composer.lock
+
+# IDE and OS noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/settings.json
+
+# CI/CD internals
+.github/workflows/
+# (Copilot instructions is the exception — kept out of ignore)
+
+# Coverage and test output
+coverage/
+.nyc_output/
+htmlcov/
+*.lcov
