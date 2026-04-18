@@ -29,7 +29,6 @@
 | System design      | `docs/architecture.md`          |
 | Product & features | `docs/prd.md`                   |
 | API contracts      | `docs/api.md`                   |
-| DB schema          | `[prisma/schema.prisma]`        |
 | Code standards     | `docs/conventions.md`           |
 | MCP tools          | `.mcp.json`                     |
 | Sensitive Data     | `.aiignore`                     |
