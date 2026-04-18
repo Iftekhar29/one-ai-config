@@ -28,6 +28,16 @@ Each tool expects different config formats.
 ---
 
 
+## 🧠 Core Idea
+
+> **AGENTS.md is the brain. Everything else is just an entry point.**
+
+- Write rules once  
+- Let every AI tool follow them  
+- Maintain consistency across your entire workflow  
+
+---
+
 ## 📚 Detailed File-per-Tool Reference
 
 | Tool / IDE | Config file(s) | Scope | Also reads AGENTS.md? |
@@ -48,29 +58,6 @@ Each tool expects different config formats.
 | Firebase Studio | .idx/airules.md | Project root | Via symlink |
 | Amazon Q Developer | .amazonq/rules/ | VS Code + JetBrains | No |
 
----
-
-## 🧠 Core Idea
-
-> **AGENTS.md is the brain. Everything else is just an entry point.**
-
-- Write rules once  
-- Let every AI tool follow them  
-- Maintain consistency across your entire workflow  
-
----
-
-## 📂 File-per-Tool Mapping
-
-| Tool | Config |
-|------|--------|
-| Claude | CLAUDE.md |
-| Cursor | .cursorrules / .cursor/rules |
-| Copilot | .github/copilot-instructions.md |
-| Gemini | GEMINI.md |
-| Codex | AGENTS.md |
-| Windsurf | .windsurfrules |
-| Cline | .clinerules |
 
 All of them → **delegate to AGENTS.md**
 
