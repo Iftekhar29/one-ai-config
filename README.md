@@ -24,6 +24,30 @@ Each tool expects different config formats.
 ❌ Result: duplicated effort, inconsistent behavior  
 ✅ Solution: **a unified AI instruction system**
 
+
+---
+
+
+## 📚 Detailed File-per-Tool Reference
+
+| Tool / IDE | Config file(s) | Scope | Also reads AGENTS.md? |
+|------------|---------------|-------|------------------------|
+| Claude Code | CLAUDE.md<br>CLAUDE.local.md (personal, gitignored) | Project root + subdirs | Via symlink |
+| Cursor | .cursor/rules/*.mdc<br>.cursorrules (legacy) | Glob-scoped per .mdc file | Yes, natively |
+| Windsurf | .windsurfrules<br>global_rules.md | Project + global | Yes, natively |
+| GitHub Copilot | .github/copilot-instructions.md | Repo-level | Yes, natively |
+| VS Code (Copilot) | .github/copilot-instructions.md<br>.amazonq/rules/ (Q Developer) | Extension-dependent | Via Copilot |
+| Gemini CLI | GEMINI.md<br>~/.gemini/GEMINI.md (global) | Project + global + subdirs | Yes, natively |
+| OpenAI Codex CLI | AGENTS.md | Project root | Native format |
+| Cline | .clinerules | Project root | Yes, natively |
+| Kiro (AWS) | .kiro/steering/*.md | Spec-driven, per-project | Not confirmed |
+| JetBrains (Junie) | Built-in AI chat config | IDE-managed | Not confirmed |
+| Antigravity (Google) | GEMINI.md / custom | Agent-first platform | Partial |
+| Amp (Sourcegraph) | AGENT.md | Project + subdirs | Native format |
+| Replit | .replit.md | Project root | Via symlink |
+| Firebase Studio | .idx/airules.md | Project root | Via symlink |
+| Amazon Q Developer | .amazonq/rules/ | VS Code + JetBrains | No |
+
 ---
 
 ## 🧠 Core Idea
